@@ -1,0 +1,18 @@
+<template name="home">
+  <head>
+    <title>accts - test app for accounts-templates-bootstrap</title>
+  </head>
+
+  <body>
+
+    <h1>test for accounts-templates-bootstrap</h1>
+
+    <button id="signin" type="button" class="btn btn-primary">go to sign in / sign up page</button>
+  
+    {{#if currentUser}}
+      <p>Logged in as {{nameOfCurrentUser}}</p>
+      <button id="logout" type="button" class="btn btn-info">logout</button>
+    {{/if}}
+
+  </body>
+</template>
